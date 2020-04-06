@@ -1,3 +1,4 @@
+```javascript
 const myContacts = [
     {
         id :1,
@@ -24,12 +25,10 @@ const myContacts = [
         age : 35
     }
 ]
+```
 
-//create contact console with method show contact add contact, filter contact and delete contact
-// show contacts
-console.log(myContacts);
-
-const showContact = contacts => {
+## Creat Contact console with method show contact, add contact, filter contact, and delete contact
+```const showContact = contacts => {
     for (let index = 0; index < contacts.length; index++){
         const contact = contacts[index]
         console.log(`[${contact.id}], ${contact.name},${contact.phone},${contact.email}`);
@@ -37,28 +36,4 @@ const showContact = contacts => {
     }
 }
 showContact(myContacts);
-
-// add contact push
-const addContact = [{id : 4, name : "Indra", phone : "0985646464", email : "indra@glints.com", age : 35}]
-
-let newContact = myContacts.push(addContact);
-console.log(myContacts);
-
-// myContacts.push(addContact);
-// console.log(myContacts);
-
-
-
-// filter contact
-const ditemukan = myContacts.filter((item, index, array) => {
-    if (item.age == 34 )
-    return true;
-    return false;
-})
-console.log(ditemukan);
-
-//delete contact
-
- myContacts.pop();
-console.log(myContacts);
-
+```
